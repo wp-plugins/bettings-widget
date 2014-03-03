@@ -37,6 +37,9 @@ You need a Bettin.gs account and you need to register a few bets so you have som
 
 == Changelog ==
 
+= 0.2.1 =
+* Supersmall bug fix.
+
 = 0.2 =
 * Now showing stats from all time, not only the last month.
 

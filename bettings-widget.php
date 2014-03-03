@@ -72,7 +72,7 @@ class Bettings_Widget extends WP_Widget {
 		/* Display name from widget settings if one was input. */
 		if ( $alias ) {
 			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, 'http://bettin.gs/api/recentstats/'.$alias);
+			curl_setopt($ch, CURLOPT_URL, 'http://bettin.gs/api/alltimestats/'.$alias);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			$body = curl_exec($ch);
 			$stats = json_decode($body, true);
