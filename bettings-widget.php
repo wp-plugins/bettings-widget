@@ -3,7 +3,7 @@
  * Plugin Name: Bettin.gs widget
  * Plugin URI: http://bettin.gs/widget
  * Description: Show your stats from Bettin.gs
- * Version: 0.1
+ * Version: 0.2.2
  * Author: Samuel Ericson
  * Author URI: http://samuelericson.com
  *

@@ -4,7 +4,7 @@ Donate link: https://flattr.com/profile/bettin_gs
 Tags: betting, statistics, sport
 Requires at least: 3.0.1
 Tested up to: 3.8.1
-Stable tag: 0.2.1
+Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,9 @@ You need a Bettin.gs account and you need to register a few bets so you have som
 1. Stats in the sidebar on your blog.
 
 == Changelog ==
+
+= 0.2.2 =
+* Fix in svn.
 
 = 0.2.1 =
 * Supersmall bug fix.
