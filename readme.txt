@@ -3,14 +3,14 @@ Contributors: sericson
 Donate link: https://flattr.com/profile/bettin_gs
 Tags: betting, statistics, sport
 Requires at least: 3.0.1
-Tested up to: 3.8.1
-Stable tag: 0.2.2
+Tested up to: 4.2.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Show your stats from Bettin.gs directly on your blog. This simple widget shows the ROI, number of won and lost bets as well as the average odds on your latest bets (1 month back) directly on your blog.
+This widget shows your stats from Bettin.gs, the easiest way to manage your betting portfolio, directly on your blog. This simple widget shows the ROI and profit, number of won bets, top sport and bookie as well as winning percentage (hit rate)directly on your blog.
 
 == Installation ==
 
@@ -25,6 +25,8 @@ Show your stats from Bettin.gs directly on your blog. This simple widget shows t
 
 Bettin.gs is an online tool that helps you manage your betting portfolio. It helps you track your bets and progress and see where you are making the most money and where you could improve.
 
+By registering the bets you place, you get access to automatically generated stats based on those bets. Statistics like ROI, top tipsters, sports, tags and much much more.
+
 Read more at [http://bettin.gs](bettin.gs "Bettin.gs")
 
 = What do I need to get started? =
@@ -36,6 +38,11 @@ You need a Bettin.gs account and you need to register a few bets so you have som
 1. Stats in the sidebar on your blog.
 
 == Changelog ==
+
+= 1.0 =
+* Huge performace improvements. The widget loads approximately 20 times faster.
+* Average odds removed and hit rate (winning %), top sport and top bookie added. This is now the same as the stats you see in the stats summary on the site.
+* Plus a few small design changes
 
 = 0.2.2 =
 * Fix in svn.

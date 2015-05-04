@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Bettin.gs widget
- * Plugin URI: http://bettin.gs/widget
+ * Plugin URI: http://bettin.gs/about
  * Description: Show your stats from Bettin.gs
- * Version: 0.2.2
+ * Version: 1.0
  * Author: Samuel Ericson
  * Author URI: http://samuelericson.com
  *
@@ -31,7 +31,7 @@ function bettings_load_widgets() {
 /**
  * Bettings Widget class.
  * This class handles everything that needs to be handled with the widget:
- * the settings, form, display, and update.  Nice!
+ * the settings, form, display, and update.
  *
  * @since 0.1
  */
@@ -79,18 +79,19 @@ class Bettings_Widget extends WP_Widget {
 			
 			echo __('<table width="100%">', 'bettings');
 			echo __('<tbody>', 'bettings_widget_domain');
-			echo __('<tr><td width="80">ROI: </td><td><strong>'.($stats[roi]*100).'%</strong></td></tr>', 'bettings');
-			echo __('<tr><td>Bets: </td><td><strong>'.$stats[numberOfBets].'</strong></td></tr>', 'bettings');
-			echo __('<tr><td>Won: </td><td><strong>'.$stats[numberOfWonBets].'</strong></td></tr>', 'bettings');
-			echo __('<tr><td>Lost: </td><td><strong>'.$stats[numberOfLostBets].'</strong></td></tr>', 'bettings');
-			echo __('<tr><td>Avg. odds: </td><td><strong>'.$stats[averageOdds].'</strong></td></tr>', 'bettings');
+			echo __('<tr><td width="40%">ROI</td><td>Profit</td></tr>', 'bettings');
+			echo __('<tr><td style="padding-bottom: 0.5em"><strong>'.($stats[roi]).'</strong></td><td  style="padding-bottom: 0.5em"><strong>'.$stats[profit].'</strong></td></tr>', 'bettings');
+			echo __('<tr><td>Placed bets</td><td>Won bets</td></tr>', 'bettings');
+			echo __('<tr><td  style="padding-bottom: 0.5em"><strong>'.$stats[numberOfBets].'</strong></td><td  style="padding-bottom: 0.5em"><strong>'.$stats[numberOfWonBets].' ('.$stats[wonPercent].'%)</strong></td></tr>', 'bettings');
+			echo __('<tr><td width="40%">Top sport</td><td>Top bookie</td></tr>', 'bettings');
+			echo __('<tr><td><strong>'.($stats[popularSport]).'</strong></td><td><strong>'.$stats[popularBookie].'</strong></td></tr>', 'bettings');
 			echo __('</tbody>', 'bettings');
 			echo __('</table>', 'bettings');
 		}
 
 		/* If show link was selected, display the link to Bettin.gs. */
 		if ( $show_link )
-			printf( '<p>Full stats at <a href="http://bettin.gs/'.$alias.'/bets">Bettin.gs</a></p>', 'bettings' );
+			printf( '<p>Full stats &rarr; <a href="http://bettin.gs/'.$alias.'">Bettin.gs/'.$alias.'</a></p>', 'bettings' );
 
 		/* After widget (defined by themes). */
 		echo $after_widget;
